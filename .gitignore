@@ -1,3 +1,0 @@
-.local/share/gnome-shell/extensions/*/*
-!.local/share/gnome-shell/extensions/*/schemas
-.local/share/gnome-shell/extensions/*/schemas/gschemas.compiled

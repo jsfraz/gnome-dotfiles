@@ -1,0 +1,57 @@
+conky.config = {
+    use_xft = true,
+	xftalpha = 0.1,
+	update_interval = 1,
+	
+	own_window = true,
+	own_window_type = 'normal',
+	own_window_transparent = false,
+	own_window_hints = 'undecorated,sticky,below,skip_taskbar,skip_pager',
+	own_window_argb_visual = true,
+	own_window_argb_value = 0,
+	double_buffer = true,
+	draw_shades = false,
+	draw_outline = false,
+	draw_borders = false,
+	draw_blended = false,
+
+    alignment = 'bottom_left',
+    gap_x = 40,
+    gap_y = -55,
+    minimum_width = 650,
+    maximum_width = 1600,
+
+    own_window = true,
+    own_window_type = 'desktop',
+    own_window_transparent = true,
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+
+    double_buffer = true,
+    draw_shades = false,
+    draw_outline = false,
+    draw_borders = false,
+    draw_graph_borders = false,
+
+    no_buffers = true,
+    use_xft = true,
+    xftalpha = 0.1,
+    cpu_avg_samples = 2,
+    update_interval = 1,
+    total_run_times = 0,
+    imlib_cache_size = 0,
+};
+
+conky.text = [[
+${if_running spotify}
+${exec ~/.conky/rice/scripts/cover.sh}
+# --- Zobrazení coveru ---
+${image ~/.conky/rice/current/current.jpg -p 0,0 -s 150x150}
+# --- Informace o skladbě ---
+${voffset -67.5}${goto 170}${font FiraCode Nerd Font:size=10}Skladba:
+${goto 180}${font FiraCode Nerd Font:size=16}${exec ~/.conky/rice/scripts/title.sh}
+${voffset -5}${goto 170}${font FiraCode Nerd Font:size=10}Umělec:
+${goto 180}${font FiraCode Nerd Font:size=16}${exec ~/.conky/rice/scripts/artist.sh}
+${voffset -5}${goto 170}${font FiraCode Nerd Font:size=10}Album:
+${goto 180}${font FiraCode Nerd Font:size=16}${exec ~/.conky/rice/scripts/album.sh}
+${endif}
+]];

@@ -1,0 +1,20 @@
+[window]
+dimensions = { columns = 80, lines = 24 }
+opacity = 0.5
+decorations_theme_variant = "Dark"
+
+[colors.primary]
+background = "#000000"
+
+[font]
+normal = { family = "FiraCode Nerd Font", style = "Mono" }
+
+[mouse]
+    bindings = [
+        { mouse = "Right", action = "Copy" },
+    ]
+
+[keyboard]
+bindings = [
+   { key = "T", mods = "Control", action = "SpawnNewInstance" }
+]

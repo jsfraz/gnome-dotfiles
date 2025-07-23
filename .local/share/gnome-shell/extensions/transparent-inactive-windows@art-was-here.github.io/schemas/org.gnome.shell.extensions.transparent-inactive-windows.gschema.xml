@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.transparent-inactive-windows" path="/org/gnome/shell/extensions/transparent-inactive-windows/">
+    <key name="window-opacity" type="i">
+      <default>60</default>
+      <summary>The opacity percentage of windows</summary>
+      <description>The opacity percentage of windows, from 5% (mostly transparent) to 100% (completely opaque).</description>
+    </key>
+    <key name="apply-to-all-windows" type="b">
+      <default>false</default>
+      <summary>Apply transparency to all windows</summary>
+      <description>When enabled, applies transparency to all windows instead of just inactive ones.</description>
+    </key>
+    <key name="animation-speed" type="i">
+      <default>300</default>
+      <summary>Animation speed in milliseconds</summary>
+      <description>The duration of the fade animation in milliseconds, from 50ms (very fast) to 1000ms (slow).</description>
+    </key>
+  </schema>
+</schemalist> 

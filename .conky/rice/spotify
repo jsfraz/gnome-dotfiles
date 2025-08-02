@@ -1,3 +1,5 @@
+# https://github.com/Madh93/conky-spotify
+
 conky.config = {
     use_xft = true,
 	xftalpha = 0.1,

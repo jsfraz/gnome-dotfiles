@@ -1,3 +1,5 @@
+# https://www.reddit.com/r/Conkyporn/comments/112fjuw/updated_my_config_a_bit/
+
 conky.config = {
 	use_xft = true,
 	xftalpha = 0.1,

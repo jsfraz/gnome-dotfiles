@@ -1,6 +1,8 @@
 # https://github.com/Madh93/conky-spotify
 
 conky.config = {
+    xinerama_head = 1,
+
     use_xft = true,
 	xftalpha = 0.1,
 	update_interval = 1,
@@ -18,7 +20,7 @@ conky.config = {
 	draw_blended = false,
 
     alignment = 'bottom_left',
-    gap_x = 40,
+    gap_x = 20,
     gap_y = -55,
     minimum_width = 650,
     maximum_width = 1600,
@@ -49,7 +51,7 @@ ${exec ~/.conky/rice/scripts/cover.sh}
 # --- Zobrazení coveru ---
 ${image ~/.conky/rice/current/current.jpg -p 0,0 -s 150x150}
 # --- Informace o skladbě ---
-${voffset -67.5}${goto 170}${font FiraCode Nerd Font:size=10}Skladba:
+${voffset -45}${goto 170}${font FiraCode Nerd Font:size=10}Skladba:
 ${goto 180}${font FiraCode Nerd Font:size=16}${exec ~/.conky/rice/scripts/title.sh}
 ${voffset -5}${goto 170}${font FiraCode Nerd Font:size=10}Umělec:
 ${goto 180}${font FiraCode Nerd Font:size=16}${exec ~/.conky/rice/scripts/artist.sh}

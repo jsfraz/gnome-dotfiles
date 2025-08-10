@@ -1,6 +1,8 @@
 # https://www.reddit.com/r/Conkyporn/comments/112fjuw/updated_my_config_a_bit/
 
 conky.config = {
+	xinerama_head = 1,
+	
 	use_xft = true,
 	xftalpha = 0.1,
 	update_interval = 1,
@@ -18,10 +20,10 @@ conky.config = {
 	draw_blended = false,
 
 	alignment = 'top_left',
-	gap_x = 40,
+	gap_x = 20,
 	gap_y = 0,
 	minimum_width = 100,
-	minimum_height = 100,
+	minimum_height = 800,
 	maximum_width = 750,
 
 	no_buffers = true,

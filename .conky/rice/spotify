@@ -51,7 +51,7 @@ ${exec ~/.conky/rice/scripts/cover.sh}
 # --- Zobrazení coveru ---
 ${image ~/.conky/rice/current/current.jpg -p 0,0 -s 150x150}
 # --- Informace o skladbě ---
-${voffset -45}${goto 170}${font FiraCode Nerd Font:size=10}Skladba:
+${voffset -52}${goto 170}${font FiraCode Nerd Font:size=10}Skladba:
 ${goto 180}${font FiraCode Nerd Font:size=16}${exec ~/.conky/rice/scripts/title.sh}
 ${voffset -5}${goto 170}${font FiraCode Nerd Font:size=10}Umělec:
 ${goto 180}${font FiraCode Nerd Font:size=16}${exec ~/.conky/rice/scripts/artist.sh}
